@@ -19,6 +19,12 @@ namespace FeaturedDeveloper.Data
             _DevelopersContext= developerContext;
             _logger = logger;
         }
+        public List<DeveloperFields> GetDevelopers()
+        {
+            List<DeveloperFields> q = _DevelopersContext.DeveloperFields.ToList();
+            return q;
+        }
+
         public DeveloperFields GetDeveloper()
         {
             var q = _DevelopersContext.DeveloperFields.FirstOrDefault();

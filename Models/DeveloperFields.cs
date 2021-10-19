@@ -12,6 +12,7 @@ namespace FeaturedDeveloper.Models
     [Table("developers")]
     public class DeveloperFields
     {
+
         [Key]
         public String developerid { get; set; }
         
@@ -31,7 +32,8 @@ namespace FeaturedDeveloper.Models
 
         //public String createdOn { get; set; }
 
-        //public String lastshowedON { get; set; }
+        public String lastshowedon { get; set; }
+
 
     }
 }

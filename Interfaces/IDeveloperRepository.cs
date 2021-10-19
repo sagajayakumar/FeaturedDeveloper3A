@@ -8,6 +8,8 @@ namespace FeaturedDeveloper.Interfaces
 {
     public interface IDeveloperRepository
     {
+        public List<DeveloperFields> GetDevelopers();
+
         public DeveloperFields GetDeveloper();
     }
 }

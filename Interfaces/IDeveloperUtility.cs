@@ -9,5 +9,7 @@ namespace FeaturedDeveloper.Interfaces
    public interface IDeveloperUtility
     {
         public DeveloperFields getDeveloper();
+
+        public DeveloperFields getDeveloperOfDay();
     }
 }

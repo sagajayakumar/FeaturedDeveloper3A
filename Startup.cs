@@ -50,7 +50,13 @@ namespace FeaturedDeveloper
             }
 
             app.UseRouting();
-
+            app.UseCors(builder =>
+            {
+                builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            });
             app.UseAuthorization();
             app.UseHttpsRedirection();
             app.UseEndpoints(endpoints =>
