@@ -11,5 +11,7 @@ namespace FeaturedDeveloper.Interfaces
         public List<DeveloperFields> GetDevelopers();
 
         public DeveloperFields GetDeveloper();
+
+        public String updateLastShowed( DeveloperFields d);
     }
 }

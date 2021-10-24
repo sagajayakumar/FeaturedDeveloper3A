@@ -34,7 +34,7 @@ namespace FeaturedDeveloper.Controllers
         [HttpGet("api/DeveloperofTheDay")]
         public DeveloperFields DeveloperofTheDay()
         {
-            _utility.getDeveloperOfDay();
+           // _utility.getDeveloperOfDay();
             DeveloperFields developer = _utility.getDeveloperOfDay();
             return developer;
         }

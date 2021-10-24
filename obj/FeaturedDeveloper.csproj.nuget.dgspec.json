@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper\\FeaturedDeveloper.csproj": {}
+    "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper3A\\FeaturedDeveloper.csproj": {}
   },
   "projects": {
-    "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper\\FeaturedDeveloper.csproj": {
+    "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper3A\\FeaturedDeveloper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper\\FeaturedDeveloper.csproj",
+        "projectUniqueName": "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper3A\\FeaturedDeveloper.csproj",
         "projectName": "FeaturedDeveloper",
-        "projectPath": "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper\\FeaturedDeveloper.csproj",
+        "projectPath": "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper3A\\FeaturedDeveloper.csproj",
         "packagesPath": "C:\\Users\\s542392\\.nuget\\packages\\",
-        "outputPath": "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper\\obj\\",
+        "outputPath": "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper3A\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -71,6 +71,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "Microsoft.Extensions.Configuration.CommandLine": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "MySqlConnector": {
               "target": "Package",

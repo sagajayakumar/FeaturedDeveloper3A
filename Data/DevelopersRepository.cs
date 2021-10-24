@@ -30,5 +30,16 @@ namespace FeaturedDeveloper.Data
             var q = _DevelopersContext.DeveloperFields.FirstOrDefault();
             return q;
         }
+
+        public string updateLastShowed( DeveloperFields d)
+        {
+            var q = _DevelopersContext.DeveloperFields.Where(q => q.developerid == d.developerid).FirstOrDefault();
+            if(q != null)
+            {
+                d.lastshowedon = DateTime.Now.ToString();
+                _DevelopersContext.SaveChanges();
+            }
+            return "ok";
+        }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7DZunwl8mbPlylnCSN1SWfQPCi/c0rex7x+mliac4QuhzLwYWg+obi0EEKrEDgQ96eeRhiCL05Jl0mhZiBXvbw==",
+  "dgSpecHash": "9XndoTbyrvASKpqGnZC2TO2Hs3XFfRoVz6NYirj50Xj0on6j/geN3qnDuWmrshid8muwxkNmtPE0nowbFR+eaQ==",
   "success": true,
-  "projectFilePath": "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper\\FeaturedDeveloper.csproj",
+  "projectFilePath": "C:\\Jai\\GDP1\\BackEnd\\FeaturedDeveloper3A\\FeaturedDeveloper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\s542392\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\s542392\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -18,7 +18,9 @@
     "C:\\Users\\s542392\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.10\\microsoft.entityframeworkcore.tools.5.0.10.nupkg.sha512",
     "C:\\Users\\s542392\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\s542392\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "C:\\Users\\s542392\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\s542392\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\s542392\\.nuget\\packages\\microsoft.extensions.configuration.commandline\\5.0.0\\microsoft.extensions.configuration.commandline.5.0.0.nupkg.sha512",
     "C:\\Users\\s542392\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\s542392\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\s542392\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.10\\microsoft.extensions.identity.core.5.0.10.nupkg.sha512",
