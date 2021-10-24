@@ -115,3 +115,5 @@ C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\obj\Debug\netcoreapp3.1\FeaturedDevelope
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\obj\Debug\netcoreapp3.1\FeaturedDeveloper.dll
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\obj\Debug\netcoreapp3.1\FeaturedDeveloper.pdb
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\obj\Debug\netcoreapp3.1\FeaturedDeveloper.genruntimeconfig.cache
+C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll
