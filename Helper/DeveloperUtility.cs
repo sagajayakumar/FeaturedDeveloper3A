@@ -2,21 +2,31 @@
 using System.Collections.Generic;
 using FeaturedDeveloper.Interfaces;
 using FeaturedDeveloper.Models;
+using Microsoft.Extensions.Logging;
 
 namespace FeaturedDeveloper.Helper
 {
     public class DeveloperUtility : IDeveloperUtility
     {
         private readonly IDeveloperRepository _developersRepository;
+        private readonly ILogger<DeveloperUtility> _logger;
 
-        public DeveloperUtility(IDeveloperRepository developerRepository)
+        public DeveloperUtility(IDeveloperRepository developerRepository, ILogger<DeveloperUtility> logger)
         {
             _developersRepository = developerRepository;
+            _logger = logger;
         }
         public DeveloperFields getDeveloper()
         {
-            DeveloperFields developer = _developersRepository.GetDeveloper();
-            return developer;
+            try
+            {
+                DeveloperFields developer = _developersRepository.GetDeveloper();
+                return developer;
+            }catch(Exception ex)
+            {
+                _logger.LogError(ex.Message + " get developers error");
+                return null;
+            }
         }
 
         public DeveloperFields getDeveloperOfDay()
