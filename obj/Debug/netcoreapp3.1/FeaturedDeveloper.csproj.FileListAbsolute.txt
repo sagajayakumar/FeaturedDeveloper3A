@@ -57,7 +57,6 @@ C:\Jai\GDP1\BackEnd\FeaturedDeveloper\bin\Debug\netcoreapp3.1\Microsoft.Extensio
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\FeaturedDeveloper.exe
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\FeaturedDeveloper.deps.json
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\FeaturedDeveloper.runtimeconfig.json
@@ -117,3 +116,4 @@ C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\obj\Debug\netcoreapp3.1\FeaturedDevelope
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\obj\Debug\netcoreapp3.1\FeaturedDeveloper.genruntimeconfig.cache
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Jai\GDP1\BackEnd\FeaturedDeveloper3A\bin\Debug\netcoreapp3.1\appsettings.json
