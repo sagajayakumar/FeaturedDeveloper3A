@@ -12,6 +12,10 @@ namespace FeaturedDeveloper.Interfaces
 
         public DeveloperFields GetDeveloper();
 
+        public DeveloperFields GetDeveloperById(String id);
+
         public String updateLastShowed( DeveloperFields d);
+
+        public bool EditDevelopers(DeveloperFields fields);
     }
 }

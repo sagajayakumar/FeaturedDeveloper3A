@@ -16,16 +16,31 @@ namespace FeaturedDeveloper.Helper
             _developersRepository = developerRepository;
             _logger = logger;
         }
-        public DeveloperFields getDeveloper()
+        public List<DeveloperFields> getDeveloper()
         {
             try
             {
-                DeveloperFields developer = _developersRepository.GetDeveloper();
+                List<DeveloperFields> developer = _developersRepository.GetDevelopers();
                 return developer;
             }catch(Exception ex)
             {
                 _logger.LogError(ex.Message + " get developers error");
                 return null;
+            }
+        }
+
+        public String EditDeveloperInfo(String DeveloperId, DeveloperFields fields)
+        {
+            DeveloperFields d = _developersRepository.GetDeveloperById(DeveloperId);
+            DetailCompare(d, fields);
+            bool flag = _developersRepository.EditDevelopers(d);
+            if (flag == true)
+            {
+                return "ok";
+            }
+            else
+            {
+                return "failed";
             }
         }
 
@@ -62,6 +77,25 @@ namespace FeaturedDeveloper.Helper
                 }
             }
             return null;
+        }
+
+        public void DetailCompare(DeveloperFields df1, DeveloperFields df2)
+        {
+            DeveloperFields finalobj = new DeveloperFields();
+            var Old = df1.GetType();
+            var New = df2.GetType();
+            foreach (var oProperty in Old.GetProperties())
+            {
+                var oOldValue = oProperty.GetValue(df1);
+                var oNewValue = oProperty.GetValue(df2);
+                // this will handle the scenario where either value is null
+                if (!object.Equals(oOldValue, oNewValue) && oProperty.Name != "developerid" && !String.IsNullOrEmpty(oNewValue?.ToString()) && oNewValue?.ToString() != "0" && oProperty.Name != "developerid")
+                {
+                    oProperty.SetValue(df1, oNewValue);
+                }
+
+            }
+
         }
 
     }

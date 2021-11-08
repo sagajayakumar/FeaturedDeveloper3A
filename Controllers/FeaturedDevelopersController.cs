@@ -25,9 +25,9 @@ namespace FeaturedDeveloper.Controllers
         }
 
         [HttpGet("api/FeaturedDevelopers")]
-        public DeveloperFields FeaturedDevelopers()
+        public List<DeveloperFields> FeaturedDevelopers()
         {
-            DeveloperFields developers = _utility.getDeveloper();
+            List<DeveloperFields> developers = _utility.getDeveloper();
             return developers;
         }
 
@@ -38,5 +38,12 @@ namespace FeaturedDeveloper.Controllers
             DeveloperFields developer = _utility.getDeveloperOfDay();
             return developer;
         }
+
+        [HttpPost("api/EditDeveloperInfo/{DeveloperId}")]
+        public String EditDeveloperInfo([FromBody] DeveloperFields fields)
+        {
+            return "ok";
+        }
+
     }
 }

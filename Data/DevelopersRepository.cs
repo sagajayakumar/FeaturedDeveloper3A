@@ -31,6 +31,12 @@ namespace FeaturedDeveloper.Data
             return q;
         }
 
+        public DeveloperFields GetDeveloperById(String id)
+        {
+            var q = _DevelopersContext.DeveloperFields.Where(q => q.developerid == id).FirstOrDefault(); 
+            return q;
+        }
+
         public string updateLastShowed( DeveloperFields d)
         {
             var q = _DevelopersContext.DeveloperFields.Where(q => q.developerid == d.developerid).FirstOrDefault();
@@ -40,6 +46,23 @@ namespace FeaturedDeveloper.Data
                 _DevelopersContext.SaveChanges();
             }
             return "ok";
+        }
+
+        public bool EditDevelopers(DeveloperFields d)
+        {
+            var q = _DevelopersContext.DeveloperFields.Where(y => y.developerid == d.developerid).FirstOrDefault();
+            if (q != null)
+            {
+                q.emailaddress = d.emailaddress;
+                q.fullname = d.fullname;
+                q.goals = d.goals;
+                q.skills = d.skills;
+                q.githuburl = d.githuburl;
+                q.image = d.image;
+                q.linkedinurl = d.linkedinurl;
+                _DevelopersContext.SaveChanges();
+            }
+                return true;
         }
     }
 }

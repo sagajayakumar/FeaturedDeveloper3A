@@ -8,8 +8,10 @@ namespace FeaturedDeveloper.Interfaces
 {
    public interface IDeveloperUtility
     {
-        public DeveloperFields getDeveloper();
+        public List<DeveloperFields> getDeveloper();
 
         public DeveloperFields getDeveloperOfDay();
+
+        public String EditDeveloperInfo(String DeveloperId, DeveloperFields fields);
     }
 }
