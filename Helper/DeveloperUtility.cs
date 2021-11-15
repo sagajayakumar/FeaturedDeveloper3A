@@ -53,23 +53,22 @@ namespace FeaturedDeveloper.Helper
             DateTime limit = DateTime.Now.AddDays(-7);
             DateTime lastShowed = DateTime.Now;
             DeveloperFields developer = null;
-            int i = random.Next(0, size);
-            for ( i =0; i < size; i++)
+            int j = random.Next(0, size);
+            String cd = currentDay.ToString("MM/dd/yyyy"); 
+            developer = _developersRepository.GetDeveloper(cd);
+            for (int i =0; i < size; i++)
             {
-
-                if (!string.IsNullOrEmpty(developers[i].lastshowedon))
-                {
-                    lastShowed = Convert.ToDateTime(developers[i].lastshowedon);
-                }
+                lastShowed = Convert.ToDateTime(developers[i].lastshowedon);
                 int diff = DateTime.Compare(lastShowed, limit);
                 String l = lastShowed.ToString("MM/dd/yyyy");
                 String c = currentDay.ToString("MM/dd/yyyy");
                 if (l.Equals(c))
                 {
                     developer = developers[i];
+                    _developersRepository.updateLastShowed(developer);
                     return developer;
                 }
-                if(diff < 0)
+                if (diff < 0)
                 {
                      developer = developers[i];
                     _developersRepository.updateLastShowed( developer);

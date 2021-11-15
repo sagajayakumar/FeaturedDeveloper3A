@@ -25,9 +25,9 @@ namespace FeaturedDeveloper.Data
             return q;
         }
 
-        public DeveloperFields GetDeveloper()
+        public DeveloperFields GetDeveloper(String lastShowed)
         {
-            var q = _DevelopersContext.DeveloperFields.FirstOrDefault();
+            var q = _DevelopersContext.DeveloperFields.Where(q => q.lastshowedon == lastShowed).FirstOrDefault();
             return q;
         }
 

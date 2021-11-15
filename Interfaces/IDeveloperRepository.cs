@@ -10,7 +10,7 @@ namespace FeaturedDeveloper.Interfaces
     {
         public List<DeveloperFields> GetDevelopers();
 
-        public DeveloperFields GetDeveloper();
+        public DeveloperFields GetDeveloper(String lastShowed);
 
         public DeveloperFields GetDeveloperById(String id);
 
