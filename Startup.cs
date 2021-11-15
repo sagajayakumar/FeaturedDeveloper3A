@@ -63,6 +63,11 @@ namespace FeaturedDeveloper
             {
                 endpoints.MapControllers();
             });
+
+            var context = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope();
+            var db = context.ServiceProvider.GetRequiredService<DeveloperContext>();
+            db.Database.EnsureCreated();
+            db.Database.Migrate();
         }
     }
 }
