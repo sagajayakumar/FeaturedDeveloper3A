@@ -34,16 +34,31 @@ namespace FeaturedDeveloper.Controllers
         [HttpGet("api/DeveloperofTheDay")]
         public DeveloperFields DeveloperofTheDay()
         {
-           // _utility.getDeveloperOfDay();
+            // _utility.getDeveloperOfDay();
             DeveloperFields developer = _utility.getDeveloperOfDay();
             return developer;
         }
 
         [HttpPost("api/EditDeveloperInfo/{DeveloperId}")]
-        public String EditDeveloperInfo([FromBody] DeveloperFields fields)
+        public String EditDeveloperInfo([FromBody] DeveloperFields fields, String DeveloperId)
         {
+            String s = _utility.EditDeveloperInfo(DeveloperId, fields);
             return "ok";
         }
 
+        [HttpDelete("api/DeleteDeveloper")]
+        public String DeleteDeveloper(String DeveloperId)
+        {
+            String s = _utility.DeleteDeveloper(DeveloperId);
+            return "ok";
+        }
+
+
+        [HttpPost("api/developer")]
+        public String Developer([FromBody] DeveloperFields fields)
+        {
+            String s = _utility.createDeveloper(fields);
+            return s;
+        }
     }
 }

@@ -12,6 +12,10 @@ namespace FeaturedDeveloper.Interfaces
 
         public DeveloperFields getDeveloperOfDay();
 
+        public String createDeveloper(DeveloperFields fields);
+
+        public String DeleteDeveloper(String DeveloperId);
+
         public String EditDeveloperInfo(String DeveloperId, DeveloperFields fields);
     }
 }

@@ -21,20 +21,48 @@ namespace FeaturedDeveloper.Data
         }
         public List<DeveloperFields> GetDevelopers()
         {
-            List<DeveloperFields> q = _DevelopersContext.DeveloperFields.ToList();
+            List<DeveloperFields> q = _DevelopersContext.DeveloperFields.Where ( q => q.isDeleted == false).ToList();
             return q;
         }
 
         public DeveloperFields GetDeveloper(String lastShowed)
         {
-            var q = _DevelopersContext.DeveloperFields.Where(q => q.lastshowedon == lastShowed).FirstOrDefault();
+            //selecting developer information based on the lastshowed date
+            var q = _DevelopersContext.DeveloperFields.Where(q => q.lastshowedon == lastShowed && q.isDeleted == false).FirstOrDefault();
             return q;
         }
 
         public DeveloperFields GetDeveloperById(String id)
         {
-            var q = _DevelopersContext.DeveloperFields.Where(q => q.developerid == id).FirstOrDefault(); 
+            //selecting the developer information based on the id
+            var q = _DevelopersContext.DeveloperFields.Where(q => q.developerid == id && q.isDeleted == false).FirstOrDefault(); 
             return q;
+        }
+
+        public String deleteDeveloper(String id)
+        {
+            //selecting the developer based on the id
+            var q = _DevelopersContext.DeveloperFields.Where(q => q.developerid == id).FirstOrDefault();
+            if (q != null)
+            {
+                //setting the is deleted flag for the developer to true
+                q.isDeleted = true;
+            }
+            return "ok";
+        }
+
+        public String createDeveloper(DeveloperFields d)
+        {
+            try
+            {
+                DeveloperFields f = _DevelopersContext.DeveloperFields.Add(d).Entity;
+                return "ok";
+            }
+            catch
+            {
+                return "Error";
+            }
+            
         }
 
         public string updateLastShowed( DeveloperFields d)

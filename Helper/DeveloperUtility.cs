@@ -29,6 +29,18 @@ namespace FeaturedDeveloper.Helper
             }
         }
 
+        public String DeleteDeveloper(String DeveloperId)
+        {
+            String s = _developersRepository.deleteDeveloper(DeveloperId);
+            return "ok";
+        }
+
+        public String createDeveloper(DeveloperFields fields)
+        {
+            String s = _developersRepository.createDeveloper(fields);
+            return s;
+        }
+
         public String EditDeveloperInfo(String DeveloperId, DeveloperFields fields)
         {
             DeveloperFields d = _developersRepository.GetDeveloperById(DeveloperId);

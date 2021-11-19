@@ -34,6 +34,8 @@ namespace FeaturedDeveloper.Models
 
         public String lastshowedon { get; set; }
 
+        public Boolean isDeleted { get; set; }
+
 
     }
 }

@@ -16,6 +16,10 @@ namespace FeaturedDeveloper.Interfaces
 
         public String updateLastShowed( DeveloperFields d);
 
+        public String deleteDeveloper(String id);
+
+        public String createDeveloper(DeveloperFields fields);
+
         public bool EditDevelopers(DeveloperFields fields);
     }
 }
